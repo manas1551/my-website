@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>StudySmart – Home</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #c62828;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    /* Scrolling Welcome Message */
+    .marquee {
+      background-color: #e3f2fd; /* light blue background */
+      color: #1565c0; /* dark blue text */
+      padding: 10px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      overflow: hidden;
+      white-space: nowrap;
+      box-sizing: border-box;
+    }
+
+    .marquee span {
+      display: inline-block;
+      padding-left: 100%;
+      animation: scroll-left 10s linear infinite;
+    }
+
+    @keyframes scroll-left {
+      0% {
+        transform: translateX(0%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+    /* Section Box Styling */
+    .section {
+      background-color: white;
+      margin: 20px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .subject-title {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+      font-weight: bold;
+    }
+
+    /* Section Heading Colors */
+    .math-title {
+      color: #1565c0; /* Blue */
+    }
+
+    .english-title {
+      color: #2e7d32; /* Green */
+    }
+
+    .gk-title {
+      color: #d81b60 ; /*  (bold pink)*/
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    li a {
+      display: block;
+      padding: 10px;
+      margin: 8px 0;
+      background-color: #e3e3e3;
+      border-radius: 5px;
+      text-decoration: none;
+      color: #333;
+    }
+
+    li a:hover {
+      background-color: #ccc;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #333;
+      color: white;
+      padding: 15px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>StudySmart</h1>
+    <p>Learn Math, English & GK – Useful for all students & exam aspirants</p>
+  </header>
+
+  <!-- Welcome Message with Name in Blue -->
+  <div class="marquee">
+    <span>👋 Welcome! I am Manas Sahoo🕉️ – Explore and Learn with StudySmart 📚</span>
+  </div>
+
+  <!-- Math Section -->
+  <section class="section">
+    <div class="subject-title math-title">📘 Math Zone</div>
+    <ul>
+      <li><a href="math-tricks.html">Math Tricks</a></li>
+      <li><a href="math-formulas.html">Important Formulas</a></li>
+      <li><a href="math-concepts.html">Concept Clarity</a></li>
+      <li><a href="math-practice.html">Practice Sets</a></li>
+    </ul>
+  </section>
+
+  <!-- English Section -->
+  <section class="section">
+    <div class="subject-title english-title">📗 English Booster</div>
+    <ul>
+      <li><a href="english-grammar.html">Grammar Rules</a></li>
+      <li><a href="english-vocabulary.html">Vocabulary Builder</a></li>
+      <li><a href="english-sentences.html">Daily Use Sentences</a></li>
+      <li><a href="english-practice.html">Practice Exercises</a></li>
+    </ul>
+  </section>
+
+  <!-- GK Section -->
+  <section class="section">
+    <div class="subject-title gk-title">🌐 GK & Current Affairs</div>
+    <ul>
+      <li><a href="gk-current.html">Current Affairs</a></li>
+      <li><a href="gk-static.html">Static GK</a></li>
+      <li><a href="gk-quiz.html">Quiz Questions</a></li>
+      <li><a href="gk-facts.html">Quick Facts</a></li>
+    </ul>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 StudySmart | Made for learners by learners.
+  </footer>
+
+</body>
+</html>
